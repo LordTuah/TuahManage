@@ -6,7 +6,7 @@ from EmikoRobot import telethn as tbot
 @register(pattern="^/ptl ?(.*)")
 async def asupan(event):
     try:
-        resp = requests.get("https://api-tede.herokuapp.com/api/asupan/ptl").json()
+        resp = requests.get("https://apitede.herokuapp.com/api/asupan/ptl").json()
         asupannya = f"{resp['url']}"
         return await tbot.send_file(event.chat_id, asupannya)
     except Exception:
@@ -16,7 +16,7 @@ async def asupan(event):
 @register(pattern="^/chika ?(.*)")
 async def chika(event):
     try:
-        resp = requests.get("https://api-tede.herokuapp.com/api/chika").json()
+        resp = requests.get("https://apitede.herokuapp.com/api/chika").json()
         chikanya = f"{resp['url']}"
         return await tbot.send_file(event.chat_id, chikanya)
     except Exception:
@@ -30,7 +30,7 @@ async def _(hilih):
         await hilih.reply("Usage: /hilih <text>")
         return
     try:
-        resp = requests.get(f"https://tede-api.herokuapp.com/api/hilih?kata={kuntul}").json()
+        resp = requests.get(f"https://apitede.herokuapp.com/api/hilih?kata={kuntul}").json()
         hilihnya = f"{resp['result']}"
         return await hilih.reply(hilihnya)
     except Exception:
