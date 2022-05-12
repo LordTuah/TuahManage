@@ -13,6 +13,7 @@ from telegram import __version__ as peler
 from platform import python_version as memek
 from EmikoRobot import (
     ALLOW_EXCL,
+    ERROR_LOG,
     CERT_PATH,
     DONATION_LINK,
     BOT_USERNAME as bu,
@@ -271,7 +272,7 @@ def error_handler(update, context):
     if len(message) >= 4096:
         message = message[:4096]
     # Finally, send the message
-    context.bot.send_message(chat_id=OWNER_ID, text=message, parse_mode=ParseMode.HTML)
+    context.bot.send_message(chat_id=ERROR_LOG, text=message, parse_mode=ParseMode.HTML)
 
 
 # for test purposes
