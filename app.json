@@ -11,14 +11,6 @@
     
    "logo":    "https://telegra.ph/file/35e56ba7eace7332356ad.jpg",  
    "repository": "https://github.com/LordTuah/https://github.com/LordTuah/TuahManage",
-   "addons": [
-          {
-         "options": {
-            "version": "13"
-         },
-         "plan": "heroku-postgresql"
-      }
-   ],
    "buildpacks": [
     {
       "url": "https://github.com/heroku/heroku-buildpack-python"
