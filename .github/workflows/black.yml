@@ -20,7 +20,7 @@ jobs:
           commit-message: Automated code formatting
           title: Format code.
           body: Automated code formatting.
-          labels: ⚫️ black
+          labels: ⚫️ Black
           branch: autofix
           committer: Vexido <103483308+vexido@users.noreply.github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
