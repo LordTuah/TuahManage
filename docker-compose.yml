@@ -2,7 +2,7 @@
 # Jangan dihapus goblok!! Gw capek buatnya!
 # Don't remove stupid!! I'm tired of making it!
 
-version: "3.9"
+version: "3.10"
 services:
   worker:
     build: .
