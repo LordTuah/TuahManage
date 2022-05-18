@@ -33,7 +33,7 @@ services:
       DRAGONS: $DRAGONS
       DEMONS: $DEMONS
       TIGERS: $TIGERS
-      WOLVES: $TOKEN
+      WOLVES: $WOLVES
       ENV: $ENV
       WEBHOOK: $WEBHOOK
       PORT: $PORT
